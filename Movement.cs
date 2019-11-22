@@ -54,6 +54,7 @@ public class Movement : MonoBehaviour
 
         if(Input.GetMouseButton(0))
         {
+            transform.eulerAngles = new Vector3(0.0f, camera.eulerAngles.y, 0.0f);
             GetComponent<Animator>().SetLayerWeight(3, 1);
         }
     }
